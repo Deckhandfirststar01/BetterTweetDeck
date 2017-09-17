@@ -26,7 +26,9 @@
     "release:firefox": "npm run build:firefox:prod && npm run pack:firefox && rimraf artifacts/dist-firefox.zip",
     "release:chrome": "npm run build:chrome:prod && cross-env NODE_ENV=prod npm run pack:chrome",
     "test": "gulp lint && npm run release",
-    "update_emojis": "node tools/update_emojis.js"
+    "update_emojis": "node tools/update_emojis.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "homepage": "https://github.com/eramdam/BetterTweetDeck",
   "dependencies": {
@@ -82,6 +84,8 @@
     "vinyl-source-stream": "1.1.0",
     "vinyl-transform": "1.0.0",
     "web-ext": "1.9.1",
-    "xml-js": "1.3.2"
-  }
+    "xml-js": "1.3.2",
+    "snyk": "^1.40.2"
+  },
+  "snyk": true
 }
