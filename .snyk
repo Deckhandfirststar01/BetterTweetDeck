@@ -1,6 +1,32 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
-ignore: {}
+version: v1.10.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:bl:20160119':
+    - vinyl-transform > bl:
+        reason: None given
+        expires: '2018-03-03T18:21:14.911Z'
+  'npm:marked:20171207':
+    - marked:
+        reason: None given
+        expires: '2018-03-03T18:21:14.911Z'
+  'npm:shelljs:20140723':
+    - web-ext > git-rev-sync > shelljs:
+        reason: None given
+        expires: '2018-03-03T18:21:14.911Z'
+    - web-ext > addons-linter > eslint > shelljs:
+        reason: None given
+        expires: '2018-03-03T18:21:14.911Z'
+    - web-ext > addons-linter > dispensary > eslint > shelljs:
+        reason: None given
+        expires: '2018-03-03T18:21:14.912Z'
+  'npm:tunnel-agent:20170305':
+    - gulp-remote-src > request > tunnel-agent:
+        reason: None given
+        expires: '2018-03-03T18:21:14.959Z'
+    - web-ext > sign-addon > request > tunnel-agent:
+        reason: None given
+        expires: '2018-03-03T18:21:14.959Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:marked:20170112':
