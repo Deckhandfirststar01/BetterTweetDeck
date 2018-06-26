@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.10.1
+version: v1.12.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:bl:20160119':
@@ -46,3 +46,6 @@ patch:
         patched: '2017-09-17T10:29:59.812Z'
     - web-ext > sign-addon > jsonwebtoken > ms:
         patched: '2017-09-17T10:29:59.812Z'
+  'npm:tunnel-agent:20170305':
+    - gulp-remote-src > request > tunnel-agent:
+        patched: '2018-06-26T01:30:45.990Z'
