@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.10.1
+version: v1.12.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:bl:20160119':
@@ -46,3 +46,28 @@ patch:
         patched: '2017-09-17T10:29:59.812Z'
     - web-ext > sign-addon > jsonwebtoken > ms:
         patched: '2017-09-17T10:29:59.812Z'
+  'npm:hoek:20180212':
+    - gulp-remote-src > request > hawk > hoek:
+        patched: '2018-07-23T01:55:25.577Z'
+    - gulp-remote-src > request > hawk > boom > hoek:
+        patched: '2018-07-23T01:55:25.577Z'
+    - gulp-remote-src > request > hawk > sntp > hoek:
+        patched: '2018-07-23T01:55:25.577Z'
+    - gulp-remote-src > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-07-23T01:55:25.577Z'
+    - web-ext > sign-addon > jsonwebtoken > joi > hoek:
+        patched: '2018-07-23T01:55:25.577Z'
+    - web-ext > sign-addon > jsonwebtoken > joi > topo > hoek:
+        patched: '2018-07-23T01:55:25.577Z'
+  'npm:lodash:20180130':
+    - bestzip > archiver > lodash:
+        patched: '2018-07-23T01:55:25.577Z'
+    - bestzip > archiver > archiver-utils > lodash:
+        patched: '2018-07-23T01:55:25.577Z'
+    - bestzip > archiver > zip-stream > lodash:
+        patched: '2018-07-23T01:55:25.577Z'
+    - bestzip > archiver > zip-stream > archiver-utils > lodash:
+        patched: '2018-07-23T01:55:25.577Z'
+  'npm:tunnel-agent:20170305':
+    - gulp-remote-src > request > tunnel-agent:
+        patched: '2018-07-23T01:55:25.577Z'
