@@ -64,7 +64,7 @@
     "gulp-uglify": "2.1.2",
     "gulp-util": "3.0.8",
     "gulp-zip": "4.0.0",
-    "jquery": "3.2.1",
+    "jquery": "3.4.0",
     "lodash": "4.17.4",
     "marked": "0.3.9",
     "mustache": "2.3.0",
